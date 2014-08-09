@@ -1,0 +1,11 @@
+{% extends "mainstay_kanban/base.html" %}
+
+{% load form_printer %}
+
+{% block title %}
+{{ block.super }} - Add Task
+{% endblock %}
+
+{% block content %}
+{% showform form %}
+{% endblock %}
