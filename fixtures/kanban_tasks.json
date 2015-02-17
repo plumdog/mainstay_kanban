@@ -1,0 +1,38 @@
+[
+    {
+	"pk": null,
+	"model": "mainstay_kanban.task",
+	"fields": {
+            "name": "TaskNew",
+            "content": "content",
+	    "created_at": "2015-02-13T08:18:44.451Z",
+            "updated_at": "2015-02-13T08:18:52.659Z",
+            "started_at": null,
+	    "completed_at": null
+	}
+    },
+    {
+	"pk": null,
+	"model": "mainstay_kanban.task",
+	"fields": {
+            "name": "TaskStarted",
+            "content": "content",
+	    "created_at": "2015-02-13T08:18:44.451Z",
+            "updated_at": "2015-02-13T08:18:52.659Z",
+	    "started_at": "2015-02-13T08:18:52.659Z",
+            "completed_at": null
+	}
+    },
+    {
+	"pk": null,
+	"model": "mainstay_kanban.task",
+	"fields": {
+            "name": "TaskCompleted",
+            "content": "content",
+	    "created_at": "2015-02-13T08:18:44.451Z",
+            "updated_at": "2015-02-13T08:18:52.659Z",
+	    "started_at": "2015-02-13T08:18:52.659Z",
+	    "completed_at": "2015-02-13T08:18:52.659Z"
+	}
+    }
+]
