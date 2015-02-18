@@ -8,7 +8,7 @@ from .forms import TaskForm
 
 
 def index(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.for_user(request.user)
     todo = [t for t in tasks if t.started_at is None]
     in_progress = [t for t in tasks if t.started_at is not None and t.completed_at is None]
     completed = [t for t in tasks if t.completed_at is not None]
@@ -26,7 +26,7 @@ def add_task(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)
         if form.is_valid():
-            form.save()
+            form.save(delegated_by=request.user)
             messages.success(request, 'Task added')
             return redirect('mainstay_kanban:index')
         else:
